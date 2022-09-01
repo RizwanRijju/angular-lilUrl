@@ -1,0 +1,82 @@
+
+<!-- <h1>LilURL</h1> -->
+
+<div class="register-section" id="homeDiv">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="border: none; width: 420px; border-radius: 20px;">
+                <div class="card-body">
+                    <form [formGroup]="createShortUrlForm">
+                        <div class="form-group row spacing url-holder">
+                          <div class ="url-text-holder">
+                            <img src="/assets/images/link.png" alt="link" id="link-image">
+                            <label for="link" class="col-form-label text-md-right form-text">Enter a long URL to make a Lil'URL</label>
+                          </div>
+                            <input type="text" class="form-control url-input-box" (change) = "emptyUrl = false"  [formControlName] = "'url'" id = "user-url" name="url" required
+                                    autofocus placeholder="Enter URL to shorten..">
+                            <span *ngIf = "emptyUrl" class="error-text">Provide valid URL</span>
+                        </div>
+  
+                        <div class="form-group row spacing url-holder">
+                            <div class="url-text-holder">
+                              <img src="/assets/images/customization.png" alt="alias-image" id="alias-image">
+                              <label class="col-form-label text-md-right form-text">Enter Alias(Optional)</label>
+                            </div>
+                            <input type="text"  class="form-control alias-input-box" (change) = "aliasAvailable = true" [formControlName] = "'alias'" id="user-alias" autofocus placeholder="Alias">
+                            <span *ngIf = "!aliasAvailable" class="error-text">Alias not available</span>
+                        </div>
+                        <div class="form-group row">
+                          <button type="submit" class="make-url-button" (click)="makeLilUrl()">
+                              Make LilURL!
+                          </button>
+                        </div>
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="register-section" style="display: none;" id="shortenedUrlDiv">
+      <div class="row">
+          <div class="col-md-6">
+              <div class="card" style="border: none; width: 420px; border-radius: 20px;">
+                  <div class="card-body">
+                      <form>
+                          <div class="form-group row spacing url-holder">
+                            <div class ="url-text-holder">
+                              <img src="/assets/images/link.png" alt="link" id="link-image">
+                              <label for="link" class="col-form-label text-md-right form-text">Your URL</label>
+                            </div>
+                              <input type="text" id="email_address" class="form-control url-input-box" id = "long-url" name="email-address"
+                                      autofocus readonly value="{{longUrl}}">
+                          </div>
+    
+                          <div class="form-group row spacing url-holder">
+                              <div class="url-text-holder">
+                                <img src="/assets/images/customization.png" alt="alias-image" id="alias-image">
+                                <label class="col-form-label text-md-right form-text">Shortened URL</label>
+                              </div>
+                              <div id="copy-button-holder">
+                                <input type="text"  class="form-control alias-input-box" id="short-url" autofocus readonly value="{{shortUrl}}">
+                                <button (click)="copyContent()" id="copy-button"><img src="/assets/images/copy-16.png"><span style="margin-left:4px;">Copy</span></button>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                            <button type="submit" class="make-url-button" (click)="makeAnother()">
+                                Make another!
+                            </button>
+                          </div>
+                         
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3"></div>
+      </div>
+    </div>

@@ -1,0 +1,21 @@
+html{
+    background: url(assets/images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    /* background: url(assets/images/background.jpg) no-repeat center center fixed;  */
+    background: transparent;
+    /* width: 440px;
+    margin-left: 140px;
+    margin-top: 150px;
+    border-radius: 10px; */
+}
+
+#app-root{
+    display: flex;
+    flex-direction: column;
+}

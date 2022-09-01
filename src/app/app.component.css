@@ -1,0 +1,10 @@
+#app-header{
+    height: fit-content;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#url-shortener-div{
+    width: 540px;
+    margin-left: 106px;
+}

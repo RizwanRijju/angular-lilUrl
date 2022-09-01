@@ -1,0 +1,110 @@
+#lil-heading{
+  font-family: cursive;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 120%;
+}
+
+#lil-heading a{
+  color: white;
+  text-decoration: none;
+}
+
+#lil-heading a:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+/* .register-section{
+  margin-left: 25px;
+  margin-top: 100px;
+  width: 800px;
+}
+
+
+.url-holder{
+  margin-bottom: 16px;
+}
+
+#link-image{
+  height: 28px;
+  width: 28px;
+}
+
+#alias-image{
+  height: 24px;
+  width: 24px;
+}
+
+.url-text-holder{
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-left: 5px;
+}
+
+.form-text{
+  padding-top:0;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.url-input-box{
+  width: -webkit-fill-available;
+  height: 46px;
+  font-size: 13px;
+}
+
+.alias-input-box{
+  width: -webkit-fill-available;
+  height: 46px;
+  font-size: 13px;
+}
+
+.make-url-button{
+
+  background-color: green;
+  padding: 10px 36px;
+  color: white;
+  border-radius: 8px;
+  width: auto;
+  margin-top: 8px;
+  border: none;
+  font-weight: 600;
+}
+
+.make-url-button:hover{
+  opacity: 0.8;
+}
+#short-url{
+  width: 65% !important;
+}
+
+#copy-button-holder{
+
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+#copy-button{
+  background-color: green;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  margin-left: 38px;
+  padding: 0 16px;
+}
+
+.error-text{
+  font-size: 10px;
+  color: red;
+}
+
+#copy-button:hover{
+  opacity: 0.8;
+} */
